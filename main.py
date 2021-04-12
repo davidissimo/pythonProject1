@@ -1,11 +1,12 @@
-a="hi"
-b=" you"
+secret = 22
+toobig = (>31)
 
-print (a + b)
+guess = int(input("Guess the secret number (between 1 and 30): "))
 
-c="5"
-d="6"
+if guess == secret:
+    print("You've guessed it - congratulations! It's number 22.")
+elif guess ==toobig:
+    print("Sorry, too big number")
 
-print(c+d)
-
-print(a+b+c+d)
+else:
+    print("Sorry, your guess is not correct... The secret number is not " + str(guess))
